@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* This sets the by defualt background color to 100% */
+body {
+    background-color:  #2c2523;
+    /* height: 100%; Ensures the parent containers are not collapsing */
+    /* margin: 0;
+    padding: 0; */
+}
+
+@theme{
+    --color-brown: #53423e;
+    --color-lightBrown: #645558;
+    --color-darkBrown: #2c2523;
+    --color-black: #1e1917;
+    --color-white: #f1e1d9;
+    --color-whiteSmoke: #F5F5F5;
+    --color-cyan: #15d1e9;
+    --color-lightCyan: #88e5f0;
+    --color-darkCyan: #009fb3;
+    --color-orange: #fb9718;
+    --color-lightOrange: #fac27b;
+    --color-darkOrange: #d28422;
+    --color-grey: #626965;
+    --color-lightGrey: #978580;
+    --color-darkGrey: #3f4441;
+
+    --font-josefin-sans: Josefin Sans, "sans serif";
+    --font-roboto: Roboto;
+
+    --shadow-cyanShadow: 0px 0px 20px 0px rgba(94, 206, 220, 0.5); 
+    --shadow-cyanMediumShadow: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
+    --shadow-orangeMediumShadow: 10px 10px 200px 150px rgba(240, 169, 79, 0.5);
+    
+
+    --breakpoint-sm: 350px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-2xl: 1024px;
+    --breakpoint-2xl: 1536px;
+
+
+    
+}

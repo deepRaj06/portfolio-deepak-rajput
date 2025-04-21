@@ -1,0 +1,156 @@
+
+A.Installation:
+<--------project using vite setup-------->
+    a. npm create vite@latest dr-portfolio
+    b. select framework --> React -->JavaScript
+    c. cd dr-portfolio
+    d. npm install
+    e. npm run dev
+    f. npm install
+
+<--------taiwind setup-------->
+    a. https://tailwindcss.com/docs/installation/using-vite
+    b. npm install tailwindcss @tailwindcss/vite
+    c. make changes as per doc in https://tailwindcss.com/docs/installation/using-vite
+    d. src --> clear index.css --> and write @import "tailwindcss";
+    e. index.html -->  <link href="/src/styles.css" rel="stylesheet">
+    f. vite.config.js --> in addition to react--> add tailwindcss also
+    g. create new file --> tailwind.config.js
+    h. to add custom colors in tailwind css --> https://tailwindcss.com/docs/adding-custom-styles
+
+<--------fonts google---------->
+    a. https://fonts.google.com/
+    b. search josefin sans --> https://fonts.google.com/specimen/Josefin+Sans --> get font --> Get embed code
+    c. web --> @import --> copy -->  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    d. paste --> at top of index.css
+    e. do same thing for roboto font
+
+<--------vs code extension--------->
+    a. auto close tag
+    b. Color highlight
+    c. es7+React/Redux/React-Native snippets
+    d. prettier
+    e. tailwind css intellisense 
+
+<--------vs code settings------->
+    a. auto save --> on focus change
+    b. default formatter --> prettier code formatter
+
+<--------background css---------->
+    a. index.css
+    b. delete --> App.css
+
+<--------libraries---------->
+    A. react icons - https://react-icons.github.io/react-icons/
+        a. npm install react-icons --save
+
+
+<--------code flow---------->
+    A. Navbar ( Sticky to top )
+        a. Left side logo or name div
+        b. middle link section
+        c. right side hire me button
+    B. Hero Section : 35:36
+        a. Left side div
+        b. right side div
+    C. About Me Section:
+        a. left side div for HeroText
+        b. right side div for images ( consist of coloured box and image over it )
+    D. My Skills Section:
+        a. Top div contains text for my skills part
+        b. Bottom div contains skills
+        c. Each skills is separate component and each has it's own props contains icon and skill name
+    E. Experience Section:
+        a. Whole section is experinec main - inside of which it has Experience text
+        b. Experience top - experience top left, middle image and experience top right
+        c. Experience bottom - all the experiences are like component
+    F. Projects Section:
+        a. Consist of two div
+        b. Top section div - consist of text
+        c. Bottom section div - consist of projects (different component)
+    G. ContactMe Section:
+        a. Consist of two sections
+        b. On left, contact form
+        c. On right, image on top and contact info on bottom
+        d. For email - emailjs.com (Service used)
+        e. npm i emailjs
+    H. Footer Section:
+        a. Left side one text and right side two section are there
+    I. Scroll
+        a. We have added id to each section to scroll to that particular section
+    J. Framer Motion - https://motion.dev/
+        a. Google --> motion react
+        b. npm install motion
+        c. analyse from which direction text is coming i.e. from top, bottom, left or right.
+        d. 
+
+
+Note:
+1. Special styling in SingleProject.jsx
+
+Error occured during project in styling:
+md-flex-row-reverse❌ --> md:flex-row-reverse ✅
+    
+<--------folder structure---------->
+    A. public
+        images
+    B. src  
+        assets
+        components
+            HelperSection.jsx
+            navbar
+                NavbarMain.jsx
+                NavbarLogo.jsx
+                NavbarLinks.jsx
+                NavbarBtn.jsx
+            heroSection
+                HeroMain.jsx
+                HeroText.jsx
+                HeroPic.jsx
+                HeroGradient.jsx
+                SubHeroSection.jsx
+            aboutMeSection
+                AboutMeMain.jsx
+                AboutMeText.jsx
+                AboutMeImage.jsx
+            skillsSection
+                AllSkills.jsx
+                SingleSkill.jsx
+                SkillsMain.jsx
+                SkillsText.jsx
+                AllSkillsSM.jsx
+                SubSkills.jsx
+            experienceSection
+                ExperienceMain.jsx
+                ExperienceText.jsx
+                ExperienceTop.jsx
+                ExperienceTopMiddle.jsx
+                ExperienceTopRight.jsx
+                ExperienceTopLeft.jsx
+                SingleExperience.jsx
+                AllExperience.jsx
+                ExperienceInfo.jsx
+            projectsSection
+                ProjectsMain.jsx
+                ProjectsText.jsx
+                SingleProject.jsx
+            contactMeSection
+                ContactMeLeft.jsx
+                ContactMeMain.jsx
+                ContactMeRight.jsx
+                ContactForm.jsx
+                ContactInfo.jsx
+                ContactSocial.jsx
+                SingleInfo.jsx
+            footer
+                FooterMain.jsx
+        framerMotion
+            variants.jsx
+
+
+
+            
+
+            
+
+
