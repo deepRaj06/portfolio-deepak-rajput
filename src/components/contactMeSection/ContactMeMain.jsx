@@ -1,6 +1,5 @@
 import React from 'react'
-import ContactMeleft from './ContactMeleft'
-import ContactMeLeft from './ContactMeleft'
+import ContactMeLeft from './ContactMeLeft'
 import ContactMeRight from './ContactMeRight'
 
 const ContactMeMain = () => {
