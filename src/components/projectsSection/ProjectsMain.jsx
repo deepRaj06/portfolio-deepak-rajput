@@ -6,32 +6,36 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
-    align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
-  },
-  {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Infonic AI",
+    year: "May 2025",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "../../images/website-img-1.jpg",
+    // link: "#",
+    gitHubLink: "https://github.com/deepRaj06/infonic-ai",
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "DShare App",
+    year: "April 2025",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    image: "../../images/website-img-1.jpg",
+    // link: "#",
+    gitHubLink: "https://github.com/deepRaj06/dShare",
   },
   {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "Blog Buzz",
+    year: "April 2023",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "../../images/website-img-2.webp",
+    // link: "https://blog-buzz.vercel.app/",
+    gitHubLink: "https://github.com/deepRaj06/blog_website",
+  },
+  {
+    name: "Samachar App",
+    year: "March 2024",
+    align: "right",
+    image: "../../images/website-img-3.jpg",
+    // link: "#",
+    gitHubLink: "https://github.com/deepRaj06/samachar",
   },
 ];
 
@@ -54,6 +58,8 @@ const ProjectsMain = () => {
             year={item.year}
             align={item.align}
             image={item.image}
+            link={item.link}
+            gitHubLink={item.gitHubLink}
           />
         ))}
       </div>

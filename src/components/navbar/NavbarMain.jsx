@@ -3,10 +3,13 @@ import NavbarLogo from "./NavbarLogo";
 import NavbarLinks from "./NavbarLinks";
 import NavbarBtn from "./NavbarBtn";
 import { GiHamburgerMenu } from "react-icons/gi";
+import NavbarHireForm from "./NavbarHireForm";
 
 const NavbarMain = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showForm, setShowForm] = useState(false);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
@@ -17,7 +20,9 @@ const NavbarMain = () => {
         <div className={`${menuOpen ? 'sm:block' : 'sm:hidden' } lg:block`}>
           <NavbarLinks />
         </div>
-        <NavbarBtn />
+        {/* <NavbarBtn /> */}
+        <NavbarBtn onClick={() => setShowForm(true)} />
+        {showForm && <NavbarHireForm onClose={() => setShowForm(false)} />}
       </div>
       <div className="flex lg:hidden sm:block p-6 bg-black items-center justify-center rounded-full border-[0.5px] border-orange">
         <button className="text-2xl p-3 border border-orange rounded-full text-white" onClick={toggleMenu}>

@@ -10,20 +10,19 @@ const experiences = [
     company: "Algoworks Technologies Private Limited",
     date: "2019 - 2020",
     responsibilities: [
-      "Explaining and facilitating web development concepts.",
-      "Help students with their assignments and grade them weekly.",
-      "Provide support for students through their learning journey.",
+      "Worked on task's related to Salesforce Admin.",
+      "Unit test cases for code covering minimum of 80%.",
+      "Learning Salesforce modules and Implementing them in task given at the end of module "
     ],
   },
   {
     job: "Software Developer",
-    company: "TrioTree Technologies Private Lmited",
+    company: "TrioTree Technologies Private Limited",
     date: "2023 - Present",
     responsibilities: [
-      "Implementing reusable components.",
-      "Participating in large scale application.",
-      "Working on the performance of mobile applications.",
-      "Generating new ideas for better user experience.",
+      "Integrated firebase notifications ( foreground, background and killed state ) in both android and iOS app alongside enabled video calling with the help of API.",
+      "Made code compatible with recent iOS 18 version after resolving problems of both code and ipa issues.",
+      "Optimized code to reduce app size from 72mb to 33mb when deployed on play store.",
     ],
   },
 ];

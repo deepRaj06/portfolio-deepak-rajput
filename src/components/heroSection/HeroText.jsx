@@ -32,7 +32,7 @@ const HeroText = () => {
       >
         A Passionate Mobile and Web Developer
         <br />
-        with 2 years of experience.
+        with over 2 years of experience.
       </motion.p>
     </div>
   );
